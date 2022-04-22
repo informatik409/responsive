@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul li{
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 50%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.gallery img{
+    width: 200px;
+    height: 100px;
+}
+img{
+    margin: 20px 0;
+}
+@media screen and (max-width:576px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    ul li{
+        margin: 20px 0;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px){
+    ul{
+        width: 90%;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery img{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+    ul{
+        width: 90%;
+    }
+    .gallery{
+        width: 90%;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery img{
+        width: 500px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+    body{
+        background-color: red;
+    }
+    .gallery img{
+        width: 200px;
+        height: 100px;
+    }
+}
+@media screen and (min-width:1200px){
+    body{
+        background-color: orangered;
+    }
+}
